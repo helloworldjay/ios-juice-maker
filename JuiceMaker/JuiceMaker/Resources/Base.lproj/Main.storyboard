@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="landscape" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="JuiceMaker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="736" height="414"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bGX-Qn-tDQ">
+                                <rect key="frame" x="0.0" y="0.0" width="736" height="31"/>
+                                <items>
+                                    <navigationItem title="맛있는 쥬스를 만들어 드려요!" id="0xp-AW-1fC">
+                                        <barButtonItem key="rightBarButtonItem" style="plain" id="Ve4-mn-Q41">
+                                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="sKw-Rv-hpz">
+                                                <rect key="frame" x="553" y="7" width="163" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="재고 수정"/>
+                                            </button>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="bottom" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="cYG-QH-Dxr">
+                                <rect key="frame" x="10" y="81.000000000000014" width="716" height="132.33333333333337"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="M9a-0z-dhI">
+                                        <rect key="frame" x="0.0" y="0.0" width="103.33333333333333" height="132.33333333333334"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BBL-KP-rNG">
+                                                <rect key="frame" x="0.0" y="0.0" width="103.33333333333333" height="72"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                                <state key="normal" title="🍓"/>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eDc-YW-bHj">
+                                                <rect key="frame" x="0.0" y="112" width="103.33333333333333" height="20.333333333333343"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="40o-RH-C9j">
+                                        <rect key="frame" x="153.33333333333334" y="0.0" width="103.00000000000003" height="132.33333333333334"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mVn-0N-N9o">
+                                                <rect key="frame" x="0.0" y="0.0" width="103" height="72"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                                <state key="normal" title="🍌"/>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hfD-tm-c6v">
+                                                <rect key="frame" x="0.0" y="112" width="103" height="20.333333333333343"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="juK-qn-i7j">
+                                        <rect key="frame" x="306.33333333333331" y="0.0" width="103.33333333333331" height="132.33333333333334"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z40-8R-ISX">
+                                                <rect key="frame" x="0.0" y="0.0" width="103.33333333333333" height="72"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                                <state key="normal" title="🍍"/>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E1o-xG-XBB">
+                                                <rect key="frame" x="0.0" y="112" width="103.33333333333333" height="20.333333333333343"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="9KV-dK-xCj">
+                                        <rect key="frame" x="459.66666666666669" y="0.0" width="103.00000000000006" height="132.33333333333334"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e7k-9S-yai">
+                                                <rect key="frame" x="0.0" y="0.0" width="103" height="72"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                                <state key="normal" title="🥝"/>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mDz-pa-a4w">
+                                                <rect key="frame" x="0.0" y="112" width="103" height="20.333333333333343"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="Z6M-mw-40E">
+                                        <rect key="frame" x="612.66666666666663" y="0.0" width="103.33333333333337" height="132.33333333333334"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8sV-Uh-1I7">
+                                                <rect key="frame" x="0.0" y="0.0" width="103.33333333333333" height="72"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                                <state key="normal" title="🥭"/>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HvE-KX-xyT">
+                                                <rect key="frame" x="0.0" y="112" width="103.33333333333333" height="20.333333333333343"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vhR-GW-iHS">
+                                <rect key="frame" x="10" y="269" width="256.33333333333331" height="43"/>
+                                <color key="backgroundColor" name="AccentColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="43" id="ouY-pc-euf"/>
+                                </constraints>
+                                <state key="normal" title="딸바쥬스 주문">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="strawberryBananaJuiceOrder:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7FG-qE-NmT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="meD-IJ-sxZ">
+                                <rect key="frame" x="316.33333333333337" y="269" width="256.33333333333337" height="43"/>
+                                <color key="backgroundColor" name="AccentColor"/>
+                                <state key="normal" title="망키쥬스 주문">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="mangoKiwiJuiceOrder:" destination="BYZ-38-t0r" eventType="touchUpInside" id="d24-Gx-Tzl"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="51" translatesAutoresizingMaskIntoConstraints="NO" id="mWw-q0-uaU">
+                                <rect key="frame" x="10" y="338" width="716" height="43"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="F16-p0-bUM">
+                                        <rect key="frame" x="0.0" y="0.0" width="102.33333333333333" height="43"/>
+                                        <color key="backgroundColor" name="AccentColor"/>
+                                        <state key="normal">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="딸기쥬스 주문">
+                                                    <attributes>
+                                                        <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <font key="NSFont" metaFont="system" size="15"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </state>
+                                        <connections>
+                                            <action selector="strawberryJuiceOrder:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xoO-UR-ffh"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VgH-FJ-Lpk">
+                                        <rect key="frame" x="153.33333333333334" y="0.0" width="102.33333333333334" height="43"/>
+                                        <color key="backgroundColor" name="AccentColor"/>
+                                        <state key="normal">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="바나나쥬스 주문">
+                                                    <attributes>
+                                                        <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <font key="NSFont" metaFont="system" size="15"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </state>
+                                        <connections>
+                                            <action selector="bananaJuiceOrder:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LrP-f2-bkU"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="w3t-gN-eJR">
+                                        <rect key="frame" x="306.66666666666669" y="0.0" width="102.66666666666669" height="43"/>
+                                        <color key="backgroundColor" name="AccentColor"/>
+                                        <state key="normal">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="파인애플 쥬스 주문">
+                                                    <attributes>
+                                                        <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <font key="NSFont" metaFont="system" size="15"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </state>
+                                        <connections>
+                                            <action selector="pineappleJuiceOrder:" destination="BYZ-38-t0r" eventType="touchUpInside" id="H4L-6H-K51"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yUC-yO-URQ">
+                                        <rect key="frame" x="460.33333333333331" y="0.0" width="102.33333333333331" height="43"/>
+                                        <color key="backgroundColor" name="AccentColor"/>
+                                        <state key="normal">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="키위쥬스 주문">
+                                                    <attributes>
+                                                        <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <font key="NSFont" metaFont="system" size="15"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </state>
+                                        <connections>
+                                            <action selector="kiwiJuiceOrder:" destination="BYZ-38-t0r" eventType="touchUpInside" id="okC-xZ-Q3q"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iNR-4q-Yeg">
+                                        <rect key="frame" x="613.66666666666663" y="0.0" width="102.33333333333337" height="43"/>
+                                        <color key="backgroundColor" name="AccentColor"/>
+                                        <state key="normal">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="망고쥬스 주문">
+                                                    <attributes>
+                                                        <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <font key="NSFont" metaFont="system" size="15"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </state>
+                                        <connections>
+                                            <action selector="mangoJuiceOrder:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6FO-bY-Aki"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="mWw-q0-uaU" secondAttribute="bottom" constant="33" id="0nX-41-fBf"/>
+                            <constraint firstItem="meD-IJ-sxZ" firstAttribute="trailing" secondItem="9KV-dK-xCj" secondAttribute="trailing" id="5xS-kw-Jev"/>
+                            <constraint firstItem="mWw-q0-uaU" firstAttribute="top" secondItem="vhR-GW-iHS" secondAttribute="bottom" constant="26" id="6ya-Lr-1Pw"/>
+                            <constraint firstItem="meD-IJ-sxZ" firstAttribute="leading" secondItem="juK-qn-i7j" secondAttribute="leading" id="Hd3-Y5-hJd"/>
+                            <constraint firstItem="bGX-Qn-tDQ" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="QEo-tp-0z6"/>
+                            <constraint firstItem="cYG-QH-Dxr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="bXu-6m-Yng"/>
+                            <constraint firstItem="vhR-GW-iHS" firstAttribute="leading" secondItem="M9a-0z-dhI" secondAttribute="leading" id="eey-Tt-3w3"/>
+                            <constraint firstItem="cYG-QH-Dxr" firstAttribute="top" secondItem="bGX-Qn-tDQ" secondAttribute="bottom" constant="50" id="f11-mj-Voh"/>
+                            <constraint firstItem="mWw-q0-uaU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="iET-jm-d1B"/>
+                            <constraint firstItem="bGX-Qn-tDQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="iUY-kh-s8A"/>
+                            <constraint firstItem="mWw-q0-uaU" firstAttribute="height" secondItem="vhR-GW-iHS" secondAttribute="height" id="mWF-SV-3TS"/>
+                            <constraint firstItem="cYG-QH-Dxr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="oi4-69-wKD"/>
+                            <constraint firstItem="vhR-GW-iHS" firstAttribute="top" secondItem="cYG-QH-Dxr" secondAttribute="bottom" constant="55.670000000000002" id="olz-oK-wbf"/>
+                            <constraint firstItem="mWw-q0-uaU" firstAttribute="leading" secondItem="vhR-GW-iHS" secondAttribute="leading" id="rMu-8H-1Mt"/>
+                            <constraint firstItem="vhR-GW-iHS" firstAttribute="trailing" secondItem="40o-RH-C9j" secondAttribute="trailing" id="rbR-Yi-ypd"/>
+                            <constraint firstItem="meD-IJ-sxZ" firstAttribute="bottom" secondItem="vhR-GW-iHS" secondAttribute="bottom" id="upN-ej-sf6"/>
+                            <constraint firstItem="meD-IJ-sxZ" firstAttribute="top" secondItem="vhR-GW-iHS" secondAttribute="top" id="vcW-Z0-D5c"/>
+                            <constraint firstItem="bGX-Qn-tDQ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="wMT-KA-cMw"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bananaAmount" destination="hfD-tm-c6v" id="Noh-Ys-fnp"/>
+                        <outlet property="kiwiAmount" destination="mDz-pa-a4w" id="sgz-rv-djI"/>
+                        <outlet property="mangoAmount" destination="HvE-KX-xyT" id="gdQ-1c-vn5"/>
+                        <outlet property="pineappleAmount" destination="E1o-xG-XBB" id="ifA-Gh-fxD"/>
+                        <outlet property="strawberryAmount" destination="eDc-YW-bHj" id="iRS-QN-LQh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="29.347826086956523" y="71.014492753623188"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
