@@ -30,8 +30,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func bananaJuiceOrder(_ sender: UIButton) {
-//        makeAlert(with: BananaJuice())
-        fruitStockManager.fruitStocks.forEach {print($0.fruitAmount())}
+        makeAlert(with: BananaJuice())
     }
     
     @IBAction func pineappleJuiceOrder(_ sender: UIButton) {
@@ -49,12 +48,12 @@ class ViewController: UIViewController {
     func makeAlert(with juiceType: JuiceRecipe) {
         let alert = try? juiceMaker.makeJuiceAlertMessage(juiceType: juiceType)
         if let alert = alert { self.present(alert, animated: false) }
-        fruitStockManager.fruitStocks.forEach { updateFruitAmountLabel(fruitStock: $0) }
+        fruitStockManager.fruitStocks.forEach { updateFruitAmountLabel(fruitStock: $1) }
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        fruitStockManager.fruitStocks.forEach { updateFruitAmountLabel(fruitStock: $0) }
+        fruitStockManager.fruitStocks.forEach { updateFruitAmountLabel(fruitStock: $1) }
     }
     
     func updateFruitAmountLabel(fruitStock: FruitStock) {

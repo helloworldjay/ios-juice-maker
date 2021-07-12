@@ -9,13 +9,5 @@ import Foundation
 
 
 final class FruitStockManager {
-    var fruitStocks: [FruitStock] = FruitType.allCases.map { FruitStock(type: $0) }
-    
-    func currentFruitStock(byType type: FruitType) -> FruitStock? {
-        return fruitStocks.first(where: { $0.fruitType() == type })
-    }
-    
-    func changeAmount() {
-        
-    }
+    var fruitStocks: [FruitType : FruitStock] = [.strawberry: FruitStock(type: .strawberry), .banana: FruitStock(type: .banana), .kiwi: FruitStock(type: .kiwi), .mango: FruitStock(type: .mango), .pineapple: FruitStock(type: .pineapple)]
 }

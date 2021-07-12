@@ -18,9 +18,9 @@ class JuiceMaker {
         let ingredientsNeeded = juiceType.recipe
         let defaultAction =  UIAlertAction(title: "확인", style: UIAlertAction.Style.default)
         for (neededType, neededAmount) in ingredientsNeeded {
-            guard var currentFruit = fruitStockManager.currentFruitStock(byType: neededType) else { throw JuiceMakerError.cannotFindFruitStockError }
+            guard var currentFruit = fruitStockManager.fruitStocks[neededType] else { throw JuiceMakerError.cannotFindFruitStockError }
             if hasEnoughFruitAmount(currentAmount: currentFruit.fruitAmount(), amountneeded: neededAmount) {
-                currentFruit.decreaseAmount(by: neededAmount)
+                fruitStockManager.fruitStocks[neededType]?.decreaseAmount(by: neededAmount)
             } else {
                 let failAlert = UIAlertController(title: "알림", message: "재료가 모자라요. 재고를 수정할까요?", preferredStyle: .alert)
                 failAlert.addAction(defaultAction)
