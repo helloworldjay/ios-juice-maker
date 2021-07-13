@@ -32,11 +32,11 @@
 
   목표는 바나나쥬스 주문 버튼도 딸기쥬스 주문처럼 두 줄 표현으로 변경하는 것입니다.
 
-  ![2](/Users/seungjinbaek/Desktop/2.png)
+  ![2](https://user-images.githubusercontent.com/58765757/125372991-4a50cc80-e3bf-11eb-96fb-7d19ef98dd7e.png)
 
   버튼의 옵션에서 Plain을 Attributed로 변경해줍니다.
 
-  ![1](/Users/seungjinbaek/Desktop/1.png)
+  ![1](https://user-images.githubusercontent.com/58765757/125372891-12498980-e3bf-11eb-8358-c4b01a7060cc.png)
 
   이제 title을 customize 할 수 있습니다.
 
