@@ -8,6 +8,6 @@
 import Foundation
 
 
-final class FruitStockManager {
-    var fruitStocks: [FruitType : FruitStock] = [.strawberry: FruitStock(type: .strawberry), .banana: FruitStock(type: .banana), .kiwi: FruitStock(type: .kiwi), .mango: FruitStock(type: .mango), .pineapple: FruitStock(type: .pineapple)]
+struct FruitStockManager {
+    static var fruitStocks: [FruitType : FruitStock] = [.strawberry: FruitStock(type: .strawberry), .banana: FruitStock(type: .banana), .kiwi: FruitStock(type: .kiwi), .mango: FruitStock(type: .mango), .pineapple: FruitStock(type: .pineapple)]
 }

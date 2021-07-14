@@ -14,8 +14,13 @@ class ViewController: UIViewController {
     @IBOutlet weak var kiwiAmount: UILabel!
     @IBOutlet weak var mangoAmount: UILabel!
     
-    let fruitStockManager = FruitStockManager()
-    lazy var juiceMaker = JuiceMaker(manager: fruitStockManager)
+    @IBAction func moveToStockManagePage(_ sender: UIBarButtonItem) {
+        let stockManager = self.storyboard!.instantiateViewController(identifier: "stockManager")
+        
+        self.present(stockManager, animated: true)
+    }
+    
+    var juiceMaker = JuiceMaker()
     
     @IBAction func strawberryBananaJuiceOrder(_ sender: UIButton) {
         makeAlert(with: StrawberryBananaJuice())
@@ -48,12 +53,12 @@ class ViewController: UIViewController {
     func makeAlert(with juiceType: JuiceRecipe) {
         let alert = try? juiceMaker.makeJuiceAlertMessage(juiceType: juiceType)
         if let alert = alert { self.present(alert, animated: false) }
-        fruitStockManager.fruitStocks.forEach { updateFruitAmountLabel(fruitStock: $1) }
+        FruitStockManager.fruitStocks.forEach { updateFruitAmountLabel(fruitStock: $1) }
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        fruitStockManager.fruitStocks.forEach { updateFruitAmountLabel(fruitStock: $1) }
+        FruitStockManager.fruitStocks.forEach { updateFruitAmountLabel(fruitStock: $1) }
     }
     
     func updateFruitAmountLabel(fruitStock: FruitStock) {

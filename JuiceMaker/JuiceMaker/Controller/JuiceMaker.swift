@@ -8,29 +8,24 @@ import UIKit
 
 
 class JuiceMaker {
-    var fruitStockManager: FruitStockManager
-    
-    init(manager: FruitStockManager) {
-        self.fruitStockManager = manager
-    }
     
     func makeJuiceAlertMessage(juiceType: JuiceRecipe) throws -> UIAlertController {
         let ingredientsNeeded = juiceType.recipe
-        let defaultAction =  UIAlertAction(title: "확인", style: UIAlertAction.Style.default)
         for (neededType, neededAmount) in ingredientsNeeded {
-            guard var currentFruit = fruitStockManager.fruitStocks[neededType] else { throw JuiceMakerError.cannotFindFruitStockError }
+            guard var currentFruit = FruitStockManager.fruitStocks[neededType] else { throw JuiceMakerError.cannotFindFruitStockError }
             if hasEnoughFruitAmount(currentAmount: currentFruit.fruitAmount(), amountneeded: neededAmount) {
-                fruitStockManager.fruitStocks[neededType]?.decreaseAmount(by: neededAmount)
+                FruitStockManager.fruitStocks[neededType]?.decreaseAmount(by: neededAmount)
             } else {
                 let failAlert = UIAlertController(title: "알림", message: "재료가 모자라요. 재고를 수정할까요?", preferredStyle: .alert)
+                let defaultAction =  UIAlertAction(title: "아니오", style: UIAlertAction.Style.default)
                 failAlert.addAction(defaultAction)
-//                let cancelAction = UIAlertAction(title: "cancel", style: UIAlertAction.Style.cancel, handler: nil)
-//                let destructiveAction = UIAlertAction(title: "destructive", style: UIAlertAction.Style.destructive){(_) in }
-//                successAlert.addAction(defaultAction)
+                let cancelAction = UIAlertAction(title: "예", style: UIAlertAction.Style.cancel)
+                failAlert.addAction(cancelAction)
                 return failAlert
             }
         }
         let successAlert = UIAlertController(title: "알림", message: "\(juiceType.name)쥬스가 나왔습니다! 맛있게 드세요!", preferredStyle: .alert)
+        let defaultAction =  UIAlertAction(title: "확인", style: UIAlertAction.Style.default)
         successAlert.addAction(defaultAction)
         return successAlert
     }
