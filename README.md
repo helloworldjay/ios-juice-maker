@@ -6,6 +6,10 @@
 
 <br/>
 
+![test](https://user-images.githubusercontent.com/58765757/125554368-5964b5a7-c20f-40e4-9a30-98486b81c60f.gif)
+
+<br/>
+
 ## 📝 Review
 
 <br/>
@@ -14,13 +18,33 @@
 
 <br/>
 
+## 📂 전체 구조
+
+<br/>
+
+![3](https://user-images.githubusercontent.com/58765757/125555093-79514a70-480e-4075-b062-c4e941e3c2bf.png)
+
+<br/>
+
+- Controller: ViewController와 과일 재고에 변화를 주는 기능과 ViewController가 있습니다.
+  - FruitStockManager: struct 구조로 내부에 static 딕셔너리를 통해 재고를 관리합니다.
+  - JuiceMaker: 쥬스를 만드는 작업을 합니다. 과일 재고를 줄이는 역할을 합니다.
+  - ViewController: 메인 화면을 관리합니다.
+  - StockManagerViewController: 재고 관리 화면을 관리합니다.
+- Model: 과일 재고에 대한 관리를 합니다. 
+  - JuiceRecipe: 쥬스의 종류마다 필요한 과일의 개수를 관리합니다.
+  - FruitStock: 과일 재고를 struct로 구성하여 관리합니다. 각각의 과일은 enum으로 관리되는 타입과 수량을 갖습니다.
+  - JuiceMakerError: 앱에 관련된 에러를 관리합니다. 
+
+<br/>
+
 ## 🧐 고민한 점
 
 <br/>
 
-- 과일 재고의 개수를 어떻게 가질 것인가?:
+- 과일 재고의 관리를 어떻게 할 것인가?:
 
-  과일 재고의 경우 여러 객체에서 접근해야하고, 하나의 인스턴스로 관리하려면 싱글톤으로 처리해야한다고 생각했습니다. 하지만 이것은 과한 코스트이므로 static 선언을 했습니다.
+  과일 재고의 경우 여러 객체에서 접근해야하고, 하나의 인스턴스로 관리하려면 싱글톤으로 처리해야한다고 생각했었습니다. 하지만 싱글톤의 경우 테스트가 어렵고, 객체지향에 적합하지 않은 구조를 가질 수 있기 때문에 지양해야 한다는 것을 알게 되었습니다. 그래서 struct로 선언한 후(상속의 이유가 없으므로) 인스턴스를 생성해서 JuiceMaker에 넘겨주는 형태로 사용했었습니다. 하지만 이렇게 되면 2번째 ViewController에서 접근이 힘들어지기 때문에 struct에 static을 사용하는 구조로 구현했습니다. 
 
 <br/>
 
